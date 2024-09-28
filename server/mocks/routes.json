@@ -1,0 +1,26 @@
+[
+  {
+    "path": "/",
+    "exact": true,
+    "name": { "en": "Home", "he": "בית" },
+    "element": "Home"
+  },
+  {
+    "path": "/home",
+    "exact": true,
+    "name": { "en": "Home", "he": "בית" },
+    "element": "Home"
+  },
+  {
+    "path": "/about-us",
+    "exact": true,
+    "name": { "en": "about us", "he": "עלינו" },
+    "element": "AboutUs"
+  },
+  {
+    "path": "/contact-us",
+    "exact": true,
+    "name": { "en": "Contact us", "he": "צור קשר" },
+    "element": "ContactUs"
+  }
+]
