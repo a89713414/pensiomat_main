@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = 'https://pensiomat.org/'
+const baseURL = 'http://localhost:5001/'
 
 const apiServerRequest = axios.create({
   baseURL,

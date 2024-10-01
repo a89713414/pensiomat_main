@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
 import componentMapping from '../../utils/componentMapping'
-import { Home } from '../../pages/home/Home'
+
 
 const AppContent = ({ routes, texts, language }) => {
   const direction = language === 'he' ? 'rtl' : 'ltr'
