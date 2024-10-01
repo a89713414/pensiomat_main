@@ -1,11 +1,12 @@
 import React from 'react'
-import { AppSidebar, AppFooter, AppHeader, AppContent } from '../components/index'
+import { AppSidebar, AppFooter, AppHeader } from '../components/index'
 import useDataFetching from '../hooks/useDataFetching'
 import { Loading } from '../components/loading/Loading'
 import { convertAndUpdateNavItems } from '../utils/convertAndUpdateNavItems'
 import { useSelector } from 'react-redux'
 import { Error } from '../components/index'
 import { isMobile } from 'react-device-detect';
+import AppContent from '../components/content/AppContent'
 
 const DefaultLayout = () => {
   const { isError, errorMessage, isLoading, routesData, navsData, textsData } = useDataFetching()
