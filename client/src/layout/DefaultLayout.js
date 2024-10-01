@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppContent, AppSidebar, AppFooter, AppHeader } from '../components/index'
+import { AppSidebar, AppFooter, AppHeader, AppContent } from '../components/index'
 import useDataFetching from '../hooks/useDataFetching'
 import { Loading } from '../components/loading/Loading'
 import { convertAndUpdateNavItems } from '../utils/convertAndUpdateNavItems'

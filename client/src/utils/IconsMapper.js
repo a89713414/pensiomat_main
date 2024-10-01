@@ -16,6 +16,4 @@ export const iconMap = {
   cibUblockOrigin: icons.cibUblockOrigin,
   cilInstitution: icons.cilInstitution,
   cilEnvelopeLetter: icons.cilEnvelopeLetter,
-  cilPhone: icons.cilPhone,
-  cilEmail: icons.cilEmail,
 }

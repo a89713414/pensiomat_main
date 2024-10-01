@@ -331,11 +331,11 @@
     "footer": {
       "email": {
         "text": "pensiomatsupp@gmail.com",
-        "icon": "cilEmail"
+        "icon": ""
       },
       "phone": {
         "text": "0555073922",
-        "icon": "cilPhone"
+        "icon": ""
       }
     }
   }
