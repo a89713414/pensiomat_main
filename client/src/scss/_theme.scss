@@ -3,6 +3,12 @@ body {
   font-family: 'Ploni', sans-serif;
 }
 
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+
+}
+
 .wrapper {
   width: 100%;
   @include ltr-rtl('padding-left', var(--cui-sidebar-occupy-start, 0));
@@ -11,7 +17,7 @@ body {
   @include transition(padding 0.15s);
 }
 
-.header > .container-fluid,
+.header>.container-fluid,
 .sidebar-header {
   min-height: calc(4rem + 1px);
 }
@@ -44,7 +50,7 @@ body {
   }
 }
 
-.header > .container-fluid + .container-fluid {
+.header>.container-fluid+.container-fluid {
   min-height: 3rem;
 }
 

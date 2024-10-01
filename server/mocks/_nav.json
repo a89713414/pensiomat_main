@@ -25,71 +25,46 @@
   {
     "component": "CNavItem",
     "name": {
-      "en": "Funds from Insurance Companies",
-      "he": "קרנות מחברות ביטוח"
+      "en": "about us",
+      "he": "עלינו"
     },
-    "to": "/funds-from-insurance-companies",
+    "to": "/about-us",
     "icon": "cilChartPie"
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Life Insurances",
-      "he": "ביטוחים"
+      "en": "Contact us",
+      "he": "צור קשר"
     },
-    "to": "/life-insurances",
-    "icon": "cilCursor"
+    "to": "/contact-us",
+    "icon": "cilChartPie"
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Loans",
+      "en": "Withdrawals",
       "he": "משיכות כספים"
     },
-    "to": "/loans",
-    "icon": "cilCursor"
+    "to": "/withdrawals",
+    "icon": "cilChartPie"
   },
   {
-    "component": "CNavTitle",
+    "component": "CNavItem",
+    "name": {
+      "en": "Insurance",
+      "he": "ביטוחים"
+    },
+    "to": "/insurance",
+    "icon": "cilChartPie"
+  },
+  {
+    "component": "CNavItem",
     "name": {
       "en": "Tax Refund",
       "he": "החזרי מס"
-    }
-  },
-  {
-    "component": "CNavItem",
-    "name": {
-      "en": "Pension Tax Exemption",
-      "he": "פטור ממס על הפנסיה"
     },
-    "icon": "cilNotes",
-    "to": "/pension-tax-exemption"
-  },
-  {
-    "component": "CNavItem",
-    "name": {
-      "en": "National Insurance Claims",
-      "he": "תביעות ביטוח לאומי"
-    },
-    "icon": "cilNotes",
-    "to": "/national-insurance-claims"
-  },
-  {
-    "component": "CNavItem",
-    "name": {
-      "en": "Pension Fund Withdrawals",
-      "he": "משיכות כספים פנסיונים"
-    },
-    "icon": "cilNotes",
-    "to": "/pension-fund-withdrawals"
-  },
-  {
-    "component": "CNavItem",
-    "name": {
-      "en": "Lost Funds Check",
-      "he": "בדיקת כספים אבודים"
-    },
-    "icon": "cilNotes",
-    "to": "/lost-funds-check"
+    "to": "/tax-refund",
+    "icon": "cilChartPie"
   }
 ]

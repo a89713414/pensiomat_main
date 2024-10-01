@@ -2,25 +2,64 @@
   {
     "path": "/",
     "exact": true,
-    "name": { "en": "Home", "he": "בית" },
+    "name": {
+      "en": "Home",
+      "he": "בית"
+    },
     "element": "Home"
   },
   {
     "path": "/home",
     "exact": true,
-    "name": { "en": "Home", "he": "בית" },
+    "name": {
+      "en": "Home",
+      "he": "בית"
+    },
     "element": "Home"
   },
   {
     "path": "/about-us",
     "exact": true,
-    "name": { "en": "about us", "he": "עלינו" },
+    "name": {
+      "en": "about us",
+      "he": "עלינו"
+    },
     "element": "AboutUs"
   },
   {
     "path": "/contact-us",
     "exact": true,
-    "name": { "en": "Contact us", "he": "צור קשר" },
+    "name": {
+      "en": "Contact us",
+      "he": "צור קשר"
+    },
     "element": "ContactUs"
+  },
+  {
+    "path": "/withdrawals",
+    "exact": true,
+    "name": {
+      "en": "Withdrawals",
+      "he": "משיכות כספים"
+    },
+    "element": "Withdrawals"
+  },
+  {
+    "path": "/insurance",
+    "exact": true,
+    "name": {
+      "en": "Insurance",
+      "he": "ביטוחים"
+    },
+    "element": "Insurance"
+  },
+  {
+    "path": "/tax-refund",
+    "exact": true,
+    "name": {
+      "en": "Tax Refund",
+      "he": "החזרי מס"
+    },
+    "element": "TaxRefund"
   }
 ]

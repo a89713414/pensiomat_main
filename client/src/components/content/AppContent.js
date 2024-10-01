@@ -10,8 +10,8 @@ const AppContent = ({ routes, texts, language }) => {
   return (
     <CContainer fluid className={`p-0 content_wrapper_${direction}`}>
       <Suspense fallback={<CSpinner color="primary" />}>
-      <Routes>
-        {/* 
+        <Routes>
+
           {routes.map((route, idx) => {
             const Component = componentMapping[route.element]
 
@@ -25,10 +25,9 @@ const AppContent = ({ routes, texts, language }) => {
               />
             )
           })}
-          <Route path="/" element={<Navigate to="/home" replace />} /> */}
-        <Route path="*" element={<Home texts={texts} direction={direction} />} />
-      </Routes>
-    </Suspense>
+          <Route path="/" element={<Navigate to="/home" replace />} />
+        </Routes>
+      </Suspense>
     </CContainer >
   )
 }

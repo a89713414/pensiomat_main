@@ -6,7 +6,7 @@ export const Form = ({ formData, direction }) => {
 
   return (
     <CContainer className="my-5 pt-4">
-      <CRow className={`justify-content-${direction === 'rtl' ? 'end' : 'start'}`}>
+      <CRow className={`justify-content-${direction === 'rtl' ? 'end' : direction === 'ltr' ? 'start' : "center"}`}>
         <CCol md="8" lg="6">
           <h2 className="text-center mb-4">{title}</h2>
           <CForm className="border border-2 border-light rounded p-4 shadow">

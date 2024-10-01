@@ -1,5 +1,7 @@
 import React from 'react'
 import { CFooter } from '@coreui/react'
+import CIcon from '@coreui/icons-react'
+import { cilEnvelopeClosed, cilPhone } from '@coreui/icons'
 
 const AppFooter = ({ texts }) => {
   const { footer } = texts
@@ -8,10 +10,16 @@ const AppFooter = ({ texts }) => {
   return (
     <CFooter className="px-4">
       <div>
-        <span className="ms-1">{email.text}</span>
+        <CIcon icon={cilEnvelopeClosed} className="me-2" />
+        <a href={`mailto:${email.text}`} className="ms-1">
+          {email.text}
+        </a>
       </div>
       <div className="ms-auto">
-        <span className="me-1">{phone.text}</span>
+        <CIcon icon={cilPhone} className="me-2" />
+        <a href={`tel:${phone.text}`} className="me-1">
+          {phone.text}
+        </a>
       </div>
     </CFooter>
   )
