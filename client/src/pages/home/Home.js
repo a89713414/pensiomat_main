@@ -19,36 +19,43 @@ export const Home = ({ texts, direction }) => {
 
   return (
     <CContainer fluid className="p-0">
-      <CContainer fluid className="bg_background pb-3">
-        <Title title={texts?.home.title} addShadow={true} />
-        <Form formData={texts?.home.form} direction={direction} />
-        <CContainer className="pt-5">
-          <Title
-            title={texts?.home.subTitle}
-            size="display-5"
-            subtitle={texts?.home.subTitleText}
-          />
-          <CRow className="justify-content-center">
-            {cardsData.map((card) => (
-              <CCol
-                xs={12}
-                sm={12}
-                md={6}
-                lg={3}
-                key={card.title}
-                className="mb-4 d-flex justify-content-center"
-              >
-                <Card
-                  title={card.title}
-                  to={card.to}
-                  buttonTitle={cardsButtonTitle}
-                  icon={card.icon}
-                />
-              </CCol>
-            ))}
-          </CRow>
-        </CContainer>
+      <CContainer className="pt-5 pb-5 text-center home_header_wrapper" fluid style={{ backgroundColor: "#061A28" }}>
+        <h1 className='white_header'>החזר מס לשכירים</h1>
+        <h1 className='trans_header'>מגיע לך את הכסף שלך<br /> בחזרה!</h1>
+        <p >
+          בדקו עכשיו בצורה קלה, נוחה, בטוחה<br />וללא דאגות אם מגיע לכם החזרי מס
+        </p>
+        <button>לבדיקת זכאות להחזר מס ללא עלות</button>
       </CContainer>
+
+
+      <CContainer className="pt-5">
+        <Title
+          title={texts?.home.subTitle}
+          size="display-5"
+          subtitle={texts?.home.subTitleText}
+        />
+        <CRow className="justify-content-center">
+          {cardsData.map((card) => (
+            <CCol
+              xs={12}
+              sm={12}
+              md={6}
+              lg={3}
+              key={card.title}
+              className="mb-4 d-flex justify-content-center"
+            >
+              <Card
+                title={card.title}
+                to={card.to}
+                buttonTitle={cardsButtonTitle}
+                icon={card.icon}
+              />
+            </CCol>
+          ))}
+        </CRow>
+      </CContainer>
+
 
 
 
@@ -70,43 +77,6 @@ export const Home = ({ texts, direction }) => {
           ))}
         </CRow>
       </CContainer>
-
-      {/* <CContainer
-        fluid
-        className="customers_recommend_container text-center align-items-center pt-5 pb-5"
-      >
-        <CContainer>
-          <CRow>
-            <CCol>
-              <h2 className="customers_recommend_container_title">{customersRecommendTitle}</h2>
-            </CCol>
-          </CRow>
-          <CRow className="pb-3">
-            <CCol>
-              <h2 className="customers_recommend_container_sub_title">
-                {customersRecommendSubTitle}
-              </h2>
-            </CCol>
-          </CRow>
-          <CRow className="customers_recommend_content">
-            <CCol className="customers_recommend_text">
-              <span>{customersRecommendContent}</span>
-            </CCol>
-          </CRow>
-          <CRow className="mt-4">
-            <CCol>
-              <CCarousel controls={false} indicators={false} interval={3000}>
-                {customersRecommendImges.map((imgSrc, index) => (
-                  <CCarouselItem key={index}>
-                    <CImage src={imgSrc} alt={`Customer Image ${index + 1}`} />
-                  </CCarouselItem>
-                ))}
-              </CCarousel>
-            </CCol>
-          </CRow>
-        </CContainer>
-      </CContainer> */}
-
 
     </CContainer>
   )

@@ -1,26 +1,118 @@
 * {
   font-family: 'Open Sans Hebrew Condensed', Sans-serif;
 }
-.bg_background {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img1.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-    opacity: 0.5;
+
+.navbar_wrapper_top {
+  min-height: 3rem !important;
+
+
+  .icon {
+    color: #00ABE7;
+  }
+
+  img {
+    height: 3rem;
+  }
+
+  ul {
+    font-size: larger;
   }
 }
+
+.navbar_wrapper_bottom {
+  height: 8rem;
+  background-color: #061A28;
+  color: #FFFFFF;
+
+  .nav-link {
+    font-size: 1.6rem; // Adjust font size to rem
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out; // Add hover effect
+    margin-right: 2rem;
+
+    &:hover {
+      transform: scale(1.1); // Grow on hover
+    }
+  }
+
+  .active {
+    color: #00ABE7 !important;
+  }
+
+  img {
+    height: 5rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1); // Makes the image grow 10% larger
+    }
+  }
+}
+
+.home_header_wrapper {
+
+  .white_header {
+    color: #FFFFFF;
+    font-family: "Noto Sans Hebrew", Sans-serif;
+    font-size: 5.8vw;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    margin: 0;
+  }
+
+  .trans_header {
+    color: #FFFFFF00;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 5.8vw;
+    font-weight: bold;
+    line-height: 1em;
+    letter-spacing: 1.1px;
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    stroke: #FFFFFF;
+  }
+
+  p {
+    color: #FFFFFF;
+    font-family: "Noto Sans Hebrew", Sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+
+  button {
+    // Remove default button styles
+    all: unset;
+    appearance: none;
+    cursor: pointer;
+
+    // Apply custom styles
+    font-family: "Noto Sans Hebrew", Sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #061A28;
+    background-color: #00ABE7;
+    line-height: 1;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    text-align: center;
+
+    // Re-apply default button interactions (hover, focus, etc.)
+    &:hover {
+      background: linear-gradient(to bottom right, white, lighten(#00ABE7, 20%));
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 171, 231, 0.5);
+    }
+  }
+
+}
+
 
 .content_wrapper_rtl {
   direction: rtl;
@@ -86,12 +178,10 @@
 
       &::before {
         content: '';
-        background: linear-gradient(
-          180deg,
-          rgba(145, 145, 153, 0) 0%,
-          #919199 27.08%,
-          rgba(145, 145, 153, 0) 100%
-        );
+        background: linear-gradient(180deg,
+            rgba(145, 145, 153, 0) 0%,
+            #919199 27.08%,
+            rgba(145, 145, 153, 0) 100%);
         width: 2px;
         height: 100%;
         position: absolute;
@@ -147,6 +237,7 @@
             right: -302px;
           }
         }
+
         .ltr {
           &::before {
             content: '';
@@ -215,6 +306,7 @@
   }
 
   @media (max-width: 900px) {
+
     .hiw .items::before,
     .hiw .items .item .process_card_wrapper::before,
     .hiw .items .item .process_card_wrapper::after {

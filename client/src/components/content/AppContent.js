@@ -11,10 +11,8 @@ const AppContent = ({ routes, texts, language }) => {
     <CContainer fluid className={`p-0 content_wrapper_${direction}`}>
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes>
-
           {routes.map((route, idx) => {
             const Component = componentMapping[route.element]
-
             return (
               <Route
                 key={idx}
