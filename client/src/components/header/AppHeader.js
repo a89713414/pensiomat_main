@@ -42,13 +42,13 @@ const AppHeader = ({ routes, texts, language }) => {
           <CListGroup className="d-flex flex-row">
             <CListGroupItem className="border-0">
               <a href="tel:%20033750005" className="d-flex align-items-center">
-                <CIcon icon={cilPhone} size="lg" className="me-2"  />
+                <CIcon icon={cilPhone} size="lg" className="me-2" />
                 03-3750005
               </a>
             </CListGroupItem>
             <CListGroupItem className="border-0">
               <a href="mailto:office@mortax.co.il" className="d-flex align-items-center">
-                <CIcon icon={cilEnvelopeOpen} size="lg" className="me-2"  />
+                <CIcon icon={cilEnvelopeOpen} size="lg" className="me-2" />
                 office@mortax.co.il
               </a>
             </CListGroupItem>
@@ -85,7 +85,9 @@ const AppHeader = ({ routes, texts, language }) => {
             <img src='https://mortax.co.il/wp-content/uploads/2023/11/20-%D7%A9%D7%A0%D7%95%D7%AA-%D7%A0%D7%A1%D7%99%D7%95%D7%9F.png' />
           </CNavItem>
           <CNavItem>
-            <img src='https://mortax.co.il/wp-content/uploads/2023/11/logo-mortax-2048x795.png' />
+            <CNavLink to="/home" as={NavLink}>
+              <img src='https://mortax.co.il/wp-content/uploads/2023/11/logo-mortax-2048x795.png' />
+            </CNavLink>
           </CNavItem>
         </CHeaderNav>
       </CContainer>

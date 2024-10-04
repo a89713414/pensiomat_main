@@ -51,7 +51,6 @@
 }
 
 .home_header_wrapper {
-
   .white_header {
     color: #FFFFFF;
     font-family: "Noto Sans Hebrew", Sans-serif;
@@ -110,7 +109,69 @@
       box-shadow: 0 0 0 2px rgba(0, 171, 231, 0.5);
     }
   }
+}
 
+.home_bg_background_section_wrapper {
+  padding: 5%;
+  border-radius: 20px;
+  background-image: url(https://mortax.co.il/wp-content/uploads/2023/12/article2-scaled.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+
+  h5,
+  p {
+    color: #FFFFFF;
+    font-family: "Noto Sans Hebrew", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2em;
+  }
+
+  button {
+    font-family: "Noto Sans Hebrew", Sans-serif;
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #061A28;
+    background-color: #00ABE7;
+    line-height: 1;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    text-align: center;
+
+    // Re-apply default button interactions (hover, focus, etc.)
+    &:hover {
+      background: linear-gradient(to bottom right, white, lighten(#00ABE7, 20%));
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0, 171, 231, 0.5);
+    }
+  }
+
+  // Add a pseudo-element to layer the background color
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 26, 40, 0.63); // Transparent color overlay
+    border-radius: inherit; // Keep the border-radius consistent
+    z-index: 1; // Ensure this is behind the content but above the image
+  }
+
+  // Ensure content appears above the background layer
+  * {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 
@@ -134,9 +195,10 @@
   height: 16rem;
   width: 16rem;
   text-align: center;
-  background-color: #001b42;
+  background-color: #061A28;
   border-radius: 1rem;
   color: white;
+  transition: transform 0.3s ease-in-out; // Add hover effect
 
   .card_btn {
     background-color: #0058a0;
@@ -144,6 +206,11 @@
     color: white;
     margin-bottom: -1.5rem;
   }
+
+  &:hover {
+    transform: scale(1.1); // Grow on hover
+  }
+
 }
 
 .why_us_wrapper {
@@ -165,6 +232,7 @@
     color: #ffffff;
     font-weight: 500;
   }
+
 }
 
 .process_steps_container {
@@ -305,6 +373,10 @@
     }
   }
 
+
+
+
+
   @media (max-width: 900px) {
 
     .hiw .items::before,
@@ -391,5 +463,84 @@
     width: 100px;
     height: 100px;
     border-radius: 999px;
+  }
+}
+
+
+.footer-section {
+  background-color: #061A28;
+  color: white;
+
+  .footer-wrapper {
+    padding: 50px 0;
+
+    .footer-logo img {
+      max-width: 180px;
+    }
+
+    .company-info {
+      font-size: 14px;
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      .google-map {
+        iframe {
+          border-radius: 8px;
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .contact-info {
+      font-size: 14px;
+
+      .contact-item {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        svg {
+          font-size: 20px;
+        }
+
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .social-media {
+      display: flex;
+      gap: 20px;
+
+      .social-icon {
+        font-size: 20px;
+        color: white;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #00abe7;
+        }
+      }
+    }
+
+    .footer-text {
+      font-size: 14px;
+      text-align: end;
+
+      p {
+        margin-bottom: 5px;
+        font-size: 1vw;
+        font-weight: 400;
+
+        &:last-child {
+          padding-top: 1rem;
+          font-size: 0.8vw;
+          color: #00ABE7;
+        }
+      }
+    }
   }
 }

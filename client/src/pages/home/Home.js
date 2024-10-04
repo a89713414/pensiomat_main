@@ -56,8 +56,16 @@ export const Home = ({ texts, direction }) => {
         </CRow>
       </CContainer>
 
-
-
+      <CContainer className='pb-5 pt-5 text-center d-flex  align-items-center'>
+        <CContainer className='home_bg_background_section_wrapper'>
+          <h5 ><strong>מבקר המדינה חשף – המדינה חייבת 3.6 מיליארד ₪ שנגבו במיסים עודפים!</strong></h5>
+          <p ><strong>מור טקס פיננסים בע"מ&nbsp;מציעה בדיקת זכאות מהירה להחזרי מס עם צוות מקצועי מהשורה הראשונה.</strong></p>
+          <p >הבדיקה בליווי חברה פרטית להחזרי מס&nbsp;בעלת רישיון, אנו מייצגים מורשים מול מס הכנסה.</p>
+          <p >ל-8 מכל 10 אזרחים מגיע החזר מס בגובה&nbsp;8,000 ש"ח&nbsp;בממוצע ישירות אל חשבון הבנק!</p>
+          <p >גם לכם מגיע החזר מס?</p>
+          <button>התחילו בדיקת זכאות בכמה שניות</button>
+        </CContainer>
+      </CContainer>
 
       <CContainer
         fluid
@@ -68,7 +76,7 @@ export const Home = ({ texts, direction }) => {
             <h2 className="why_us_title">{whyUsTitle}</h2>
           </CCol>
         </CRow>
-        <CRow className="w-100 justify-content-center">
+        <CRow className="w-100 justify-content-around">
           {whyUsContent.map((v) => (
             <CCol key={v.text} xs={6} sm={6} md={3} lg={3} className="text-center">
               <img src={v.imgSrc} />
@@ -77,6 +85,9 @@ export const Home = ({ texts, direction }) => {
           ))}
         </CRow>
       </CContainer>
+
+
+
 
     </CContainer>
   )
