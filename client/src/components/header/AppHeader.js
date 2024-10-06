@@ -21,8 +21,8 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cifIl, cifUs, cilContrast, cilGlobeAlt, cilMenu, cilMoon, cilSun, cilPhone, cilEnvelopeOpen } from '@coreui/icons'
 import { setLanguage, setSidebarShow } from '../../redux/reducers/appSlice'
-import { AppBreadcrumb } from '../index'
 import { isMobile } from 'react-device-detect';
+import Logo from "../../assets/images/logo.png"
 
 const AppHeader = ({ routes, texts, language }) => {
   const direction = language === 'he' ? 'end' : 'start'
@@ -38,22 +38,22 @@ const AppHeader = ({ routes, texts, language }) => {
   return (
     <CHeader position="sticky" className="mb-0 p-0 header_main" ref={headerRef}>
       <CContainer className="navbar_wrapper_top d-flex justify-content-center align-items-center" fluid >
-        <CCol className="d-flex justify-content-center">
-          <CListGroup className="d-flex flex-row">
-            <CListGroupItem className="border-0">
-              <a href="tel:%20033750005" className="d-flex align-items-center">
-                <CIcon icon={cilPhone} size="lg" className="me-2" />
-                03-3750005
-              </a>
-            </CListGroupItem>
-            <CListGroupItem className="border-0">
-              <a href="mailto:office@mortax.co.il" className="d-flex align-items-center">
-                <CIcon icon={cilEnvelopeOpen} size="lg" className="me-2" />
-                office@mortax.co.il
-              </a>
-            </CListGroupItem>
-          </CListGroup>
-        </CCol>
+
+        <CListGroup className="d-flex flex-column flex-lg-row">
+          <CListGroupItem className="border-0">
+            <a href="tel:%20033750005" className="d-flex align-items-center">
+              <CIcon icon={cilPhone} size="lg" className="me-2" />
+              03-3750005
+            </a>
+          </CListGroupItem>
+          <CListGroupItem className="border-0">
+            <a href="mailto:office@mortax.co.il" className="d-flex align-items-center">
+              <CIcon icon={cilEnvelopeOpen} size="lg" className="me-2" />
+              office@mortax.co.il
+            </a>
+          </CListGroupItem>
+        </CListGroup>
+
         <CCol className="d-flex justify-content-center">
           <img src='https://mortax.co.il/wp-content/uploads/2023/11/מייצג-מורשה-1.png' alt="Logo" />
         </CCol>

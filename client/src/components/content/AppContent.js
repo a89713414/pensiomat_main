@@ -23,7 +23,7 @@ const AppContent = ({ routes, texts, language }) => {
               />
             )
           })}
-          <Route path="/" element={<Navigate to="/home" replace />} />
+          {/* <Route path="/" element={<Navigate to="/home" replace />} /> */}
         </Routes>
       </Suspense>
     </CContainer >

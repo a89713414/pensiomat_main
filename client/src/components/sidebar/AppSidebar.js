@@ -21,7 +21,7 @@ const AppSidebar = ({ navigation, language }) => {
 
   return (
     <CSidebar
-      className="border-end"
+      className="border-end transition-sidebar"
       colorScheme="dark"
       position="fixed"
       unfoldable={unfoldable}

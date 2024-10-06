@@ -182,12 +182,16 @@
           "to": "tax-refund"
         },
         {
-          "title": "ביטוחים",
-          "to": "insurance"
+          "title": "הלוואות",
+          "to": "loans"
         },
         {
-          "title": "משיכות כספים",
-          "to": "withdrawals"
+          "title": "כספים מחברות הביטוח",
+          "to": "funds_from_insurance_companies"
+        },
+        {
+          "title": "ביטוחי חיים",
+          "to": "life_insurances"
         },
         {
           "title": "בית",

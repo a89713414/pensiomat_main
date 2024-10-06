@@ -4,6 +4,7 @@ import { CContainer, CRow, CCol } from '@coreui/react'
 import { Card } from '../../components/index'
 import arrow from '../../assets/svg-icons/arrow.svg'
 import { Title } from '../../components/index'
+import { Link } from 'react-router-dom'
 
 export const Home = ({ texts, direction }) => {
   const {
@@ -25,7 +26,7 @@ export const Home = ({ texts, direction }) => {
         <p >
           בדקו עכשיו בצורה קלה, נוחה, בטוחה<br />וללא דאגות אם מגיע לכם החזרי מס
         </p>
-        <button>לבדיקת זכאות להחזר מס ללא עלות</button>
+        <Link to="/contact-us"><button>לבדיקת זכאות להחזר מס ללא עלות</button></Link>
       </CContainer>
 
 

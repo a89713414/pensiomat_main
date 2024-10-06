@@ -10,13 +10,32 @@ a {
 }
 
 
+.transition-sidebar {
+  transition: all 0.3s ease; // Sidebar transition
+  width: var(--cui-sidebar-width, 256px); // Default sidebar width
+
+  &.c-sidebar-unfoldable {
+    transition: all 0.3s ease; // Ensure transition applies to unfolded state too
+  }
+
+  &[data-visible="false"] {
+    margin-left: -100%; // Sidebar hidden position
+    transition: margin-left 0.3s ease;
+  }
+
+  &[data-visible="true"] {
+    margin-left: 0; // Sidebar visible position
+    transition: margin-left 0.3s ease;
+  }
+}
+
+// Wrapper transition for content shift when sidebar opens/closes
 .wrapper {
-  width: 100%;
   @include ltr-rtl('padding-left', var(--cui-sidebar-occupy-start, 0));
   @include ltr-rtl('padding-right', var(--cui-sidebar-occupy-end, 0));
-  will-change: auto;
-  @include transition(padding 0.15s);
+  transition: padding-left 0.3s ease, padding-right 0.3s ease;
 }
+
 
 .header {
   border-bottom: none;

@@ -36,20 +36,29 @@
     "element": "ContactUs"
   },
   {
-    "path": "/withdrawals",
+    "path": "/loans",
     "exact": true,
     "name": {
-      "en": "Withdrawals",
-      "he": "משיכות כספים"
+      "en": "Loans",
+      "he": "הלוואות"
     },
     "element": "Withdrawals"
   },
   {
-    "path": "/insurance",
+    "path": "/funds_from_insurance_companies",
     "exact": true,
     "name": {
-      "en": "Insurance",
-      "he": "ביטוחים"
+      "en": "funds_from_insurance_companies",
+      "he": "כספים מחברות הביטוח"
+    },
+    "element": "Insurance"
+  },
+  {
+    "path": "/life_insurances",
+    "exact": true,
+    "name": {
+      "en": "life_insurances",
+      "he": "ביטוחי חיים"
     },
     "element": "Insurance"
   },

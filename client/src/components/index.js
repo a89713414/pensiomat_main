@@ -1,4 +1,3 @@
-import AppBreadcrumb from './breadcrumb/AppBreadcrumb'
 import AppFooter from './footer/AppFooter'
 import AppHeader from './header/AppHeader'
 import AppSidebar from './sidebar/AppSidebar'
@@ -9,7 +8,6 @@ import { Error } from './error/Error'
 import { Card } from './card/Card'
 
 export {
-  AppBreadcrumb,
   AppHeader,
   AppFooter,
   AppSidebar,

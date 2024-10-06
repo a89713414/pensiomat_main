@@ -6,6 +6,7 @@ import CIcon from '@coreui/icons-react'
 import { iconMap } from '../../utils/IconsMapper'
 
 export const Card = ({ title, to, buttonTitle, icon, imgeSrc = null, direction = 'rtl' }) => {
+
   if (imgeSrc)
     return (
       <CCard className={`process_card_wrapper ${direction}`}>
@@ -22,7 +23,7 @@ export const Card = ({ title, to, buttonTitle, icon, imgeSrc = null, direction =
         <h5 className="mt-3">{title}</h5>
       </CCardBody>
       <CCardFooter className="d-flex justify-content-center">
-        <Link to={to}>
+        <Link to={`/${to}`}>
           <CButton className="card_btn">{buttonTitle}</CButton>
         </Link>
       </CCardFooter>
